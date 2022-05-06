@@ -1,0 +1,113 @@
+#root {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+.swiper {
+  max-width: 80rem;
+  max-height: 42.5rem;
+  margin-left: auto;
+  right: -25px;
+  margin-top: 3rem;
+
+  /* ---- RESPONSIVE ---- */
+  @media (min-width: 1800px) {
+    max-width: 1600px;
+    max-height: 1000px;
+    right: -13px;
+  }
+
+  @media (max-width: 1416px) {
+    max-width: 65rem;
+    max-height: 35rem;
+  }
+
+  @media (max-width: 1122px) {
+    max-width: 57rem;
+    max-height: 35rem;
+  }
+  @media (max-width: 991px) {
+    max-width: 53rem;
+    max-height: 34rem;
+  }
+
+  @media (max-width: 926px) {
+    max-width: 46rem;
+    max-height: 30rem;
+  }
+
+  @media (max-width: 810px) {
+    max-width: 42rem;
+    margin-top: -1rem;
+  }
+
+  @media (max-width: 700px) and (min-width: 405px) {
+    max-width: 21rem;
+    max-height: 38rem;
+  }
+
+  @media (max-width: 405px) {
+    max-width: 16rem;
+    max-height: 35rem;
+  }
+
+  span.swiper-pagination-bullet {
+    background-color: var(--white);
+
+    /* ---- RESPONSIVE ---- */
+    @media (min-width: 1800px) {
+      height: 15px;
+      width: 15px;
+    }
+  }
+
+  span.swiper-pagination-bullet-active {
+    background-color: var(--purple);
+  }
+
+  .swiper-pagination {
+    padding: 10px;
+    height: 2rem;
+    margin-bottom: 5rem;
+
+    /* ---- RESPONSIVE ---- */
+
+    @media (min-width: 1800px) {
+      margin-bottom: 8rem;
+    }
+
+    @media (max-width: 810px) {
+      margin-bottom: -1.51rem;
+      padding-top: 10px;
+      padding-bottom: 0;
+    }
+  }
+}
+
+.swiper-slide {
+  @media (min-width: 500px) {
+    height: calc((100%) / 3) !important;
+  }
+
+  @media (min-width: 810px) {
+    height: calc((100% - 33.3px) / 4) !important;
+  }
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}

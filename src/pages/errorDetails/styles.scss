@@ -1,0 +1,13 @@
+section {
+  display: flex;
+  flex-direction: column;
+
+  .error-content {
+    margin: 0 auto;
+
+    /* ---- RESPONSIBILITY ---- */
+    @media (min-width: 1800px) {
+      max-width: 1600px;
+    }
+  }
+}

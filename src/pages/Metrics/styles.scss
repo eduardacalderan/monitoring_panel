@@ -1,0 +1,17 @@
+section {
+  display: flex;
+  flex-direction: column;
+
+  .chart-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1270px;
+
+    /* ---- RESPONSIVE ---- */
+
+    @media (min-width: 1800px) {
+      max-width: 1600px;
+    }
+  }
+}

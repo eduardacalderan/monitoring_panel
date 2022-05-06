@@ -1,0 +1,216 @@
+.settings-content {
+  margin-right: -48px;
+  background: hsla(0, 0%, 100%, 0.12);
+  padding: 3rem;
+
+  width: 1270px;
+  border-radius: 20px;
+
+  @media (max-width: 1430px) {
+    max-width: 800px;
+  }
+
+  @media (max-width: 940px) {
+    max-width: 600px;
+  }
+
+  @media (max-width: 670px) {
+    width: 400px;
+  }
+
+  @media (max-width: 500px) {
+    width: 300px;
+    padding: 1.5rem;
+  }
+
+  @media (max-width: 400px) {
+    width: 260px;
+  }
+
+  form {
+    .form-header,
+    .form-body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input,
+    select {
+      padding: 0 1rem;
+      border: none;
+
+      color: var(--white);
+
+      &:focus,
+      &:checked {
+        outline: none;
+        color: var(--white);
+
+        box-shadow: 0px 0px 7px 0px hsla(0, 0%, 100%, 0.5);
+      }
+    }
+
+    input,
+    button,
+    select {
+      height: 2.5rem;
+      border-radius: 5px;
+
+      /* ---- RESPONSIVE ---- */
+      @media (min-width: 1800px) {
+        height: calc(2.5rem * var(--huge-multiplier));
+      }
+
+      /* ---- RESPONSIVE ---- */
+      @media (min-width: 1800px) {
+        font-size: calc(0.8rem * var(--huge-multiplier));
+      }
+    }
+
+    input::placeholder {
+      color: var(--white);
+      opacity: 50%;
+    }
+
+    .form-header-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      margin-bottom: 2rem;
+
+      @media (max-width: 670px) {
+        flex-direction: column;
+      }
+
+      .form-header {
+        input,
+        select {
+          @media (max-width: 670px) {
+            min-width: 100%;
+          }
+        }
+
+        & + .form-header {
+          margin-left: 1rem;
+
+          @media (max-width: 670px) {
+            margin-left: 0;
+            margin-top: 1rem;
+          }
+        }
+
+        input {
+          background: #414756;
+        }
+
+        .id {
+          width: 250px;
+
+          /* ---- RESPONSIVE ---- */
+          @media (min-width: 1800px) {
+            width: calc(250px * var(--huge-multiplier));
+          }
+
+          @media (max-width: 1430px) {
+            width: 150px;
+          }
+
+          @media (max-width: 970px) {
+            width: 70px;
+          }
+        }
+
+        .company {
+          width: 450px;
+
+          /* ---- RESPONSIVE ---- */
+          @media (min-width: 1800px) {
+            width: calc(450px * var(--huge-multiplier));
+          }
+
+          @media (max-width: 1430px) {
+            width: 250px;
+          }
+
+          @media (max-width: 970px) {
+            width: 120px;
+          }
+        }
+
+        select {
+          background: #414756;
+
+          color: hsla(0, 0%, 100%, 0.5);
+
+          option {
+            background: var(--white);
+            color: var(--bg);
+          }
+        }
+
+        .flow-1,
+        .flow-2 {
+          width: 150px;
+
+          /* ---- RESPONSIVE ---- */
+          @media (min-width: 1800px) {
+            width: calc(150px * var(--huge-multiplier));
+          }
+
+          @media (max-width: 1430px) {
+            width: 105px;
+          }
+        }
+
+        div {
+          background: var(--linear-gradient-details);
+          border-radius: 5px;
+          padding: 2px;
+        }
+      }
+    }
+
+    .form-body-container {
+      display: flex;
+      flex-direction: column;
+
+      input {
+        background: none;
+
+        &:focus,
+        &:checked {
+          box-shadow: 0px 2px 2px 0px hsla(291, 100%, 12%, 0.575);
+        }
+      }
+
+      .border {
+        height: 1px;
+        width: 100%;
+        background: var(--bg);
+
+        margin-bottom: 2.5rem;
+      }
+
+      button {
+        background: var(--linear-gradient-details);
+        color: hsl(291, 49%, 27%);
+        width: 5rem;
+
+        transition: filter 0.2s;
+
+        /* ---- RESPONSIVE ---- */
+        @media (min-width: 1800px) {
+          width: calc(5rem * var(--huge-multiplier));
+        }
+        @media (max-width: 670px) {
+          min-width: 100%;
+        }
+
+        &:hover {
+          filter: brightness(0.9);
+        }
+      }
+    }
+  }
+}

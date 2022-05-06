@@ -1,0 +1,15 @@
+section {
+  display: flex;
+  flex-direction: column;
+
+  .settings-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    /* ---- RESPONSIVE ---- */
+    @media (min-width: 1800px) {
+      max-width: 1600px;
+    }
+  }
+}

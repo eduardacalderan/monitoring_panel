@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg: hsl(225, 24%, 20%);
+  --cards: linear-gradient(
+    142deg,
+    hsla(291, 6%, 51%, 0.322),
+    78%,
+    hsla(291, 74%, 50%, 0.719)
+  );
+  --borders: hsla(0, 0%, 100%, 0.2);
+
+  --purple: hsl(291, 74%, 50%);
+  --white: hsl(0, 0%, 100%);
+  --green: hsl(101, 70%, 70%);
+  --light-green: hsl(101, 100%, 76%);
+  --yellow: hsl(49, 70%, 70%);
+  --light-yellow: hsl(49, 100%, 76%);
+  --red: hsl(0, 70%, 70%);
+  --light-red: hsla(0, 100%, 76%);
+
+  --linear-gradient-details: linear-gradient(
+    210deg,
+    hsl(133, 100%, 95%),
+    hsl(291, 74%, 50%)
+  );
+
+  --huge-multiplier: 1.4285;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  background-color: var(--bg);
+
+  color: hsl(232, 100%, 98%);
+
+  /* ---- RESPONSIVE ---- */
+  //HUGE:
+  @media (min-width: 1800px) {
+    font-size: calc(1rem * var(--huge-multiplier));
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 3rem;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  height: calc((100%) / 3) !important;
+
+  @media (min-width: 500px) {
+    height: calc((100%) / 3) !important;
+  }
+
+  @media (min-width: 810px) {
+    height: calc((100% - 33.3px) / 4) !important;
+  }
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+  /* ---- RESPONSIVE ---- */
+  //HUGE:
+  @media (min-width: 1800px) {
+    font-size: calc(18px * var(--huge-multiplier));
+  }
+}
+
+i {
+  font-size: 1.375rem;
+
+  /* ---- RESPONSIVE ---- */
+  //HUGE:
+  @media (min-width: 1800px) {
+    font-size: calc(1.375rem * var(--huge-multiplier));
+  }
+}
+
+p {
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 2rem;
+
+  /* ---- RESPONSIVE ---- */
+  //HUGE:
+  @media (min-width: 1800px) {
+    font-size: calc(2rem * var(--huge-multiplier));
+  }
+}
+
+h3 {
+  font-size: 1rem;
+
+  /* ---- RESPONSIVE ---- */
+  //HUGE:
+  @media (min-width: 1800px) {
+    font-size: calc(1rem * var(--huge-multiplier));
+  }
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
