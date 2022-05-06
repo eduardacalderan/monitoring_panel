@@ -66,10 +66,10 @@ export function Chart() {
     datasets: [
       {
         data: labels.map(() => faker.datatype.number({ min: 0, max: 150 })),
-        borderColor: "#C321DE",
-        backgroundColor: "#C321DE",
-        pointBorderColor: "#8a1f9c", //#9e9fa0
-        pointBackgroundColor: "#C321DE",
+        borderColor: "#7B77F2",
+        backgroundColor: "#7B77F2",
+        pointBorderColor: "#6966cf", //#9e9fa0
+        pointBackgroundColor: "#7B77F2",
         pointBorderWidth: 2.5,
         yAxisID: "y",
       },
@@ -86,8 +86,8 @@ export function Chart() {
       {
         label: "# of Votes",
         data: [5, 19],
-        backgroundColor: ["rgba(255, 255, 255,1)", "#C321DE"],
-        borderColor: ["rgba(255, 255, 255, 1)", "#C321DE"],
+        backgroundColor: ["rgba(255, 255, 255,1)", "#7B77F2"],
+        borderColor: ["rgba(255, 255, 255, 1)", "#7B77F2"],
         borderWidth: 1,
       },
     ],

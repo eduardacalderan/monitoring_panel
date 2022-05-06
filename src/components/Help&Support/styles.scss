@@ -1,6 +1,6 @@
 .help-and-support {
   margin-right: -58px;
-  background: hsla(0, 0%, 100%, 0.12);
+  background: var(--cards);
   padding: 3rem;
 
   width: 1270px;
@@ -39,7 +39,7 @@
 
     i {
       background: var(--linear-gradient-details);
-      color: #272d3f;
+      color: var(--cards);
       padding: 0.5rem;
       border-radius: 50%;
       cursor: pointer;

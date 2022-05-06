@@ -4,16 +4,12 @@
   box-sizing: border-box;
 }
 :root {
-  --bg: hsl(225, 24%, 20%);
-  --cards: linear-gradient(
-    142deg,
-    hsla(291, 6%, 51%, 0.322),
-    78%,
-    hsla(291, 74%, 50%, 0.719)
-  );
+  --bg: #0d0d0d;
+
+  --cards: hsl(228, 3%, 15%);
   --borders: hsla(0, 0%, 100%, 0.2);
 
-  --purple: hsl(291, 74%, 50%);
+  --purple: #7b77f2;
   --white: hsl(0, 0%, 100%);
   --green: hsl(101, 70%, 70%);
   --light-green: hsl(101, 100%, 76%);
@@ -25,7 +21,7 @@
   --linear-gradient-details: linear-gradient(
     210deg,
     hsl(133, 100%, 95%),
-    hsl(291, 74%, 50%)
+    #7b77f2
   );
 
   --huge-multiplier: 1.4285;

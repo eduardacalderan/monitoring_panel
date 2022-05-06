@@ -1,6 +1,6 @@
 .settings-content {
   margin-right: -48px;
-  background: hsla(0, 0%, 100%, 0.12);
+  background: var(--cards);
   padding: 3rem;
 
   width: 1270px;
@@ -101,7 +101,7 @@
         }
 
         input {
-          background: #414756;
+          background: #252627;
         }
 
         .id {
@@ -139,7 +139,7 @@
         }
 
         select {
-          background: #414756;
+          background: #252627;
 
           color: hsla(0, 0%, 100%, 0.5);
 
@@ -194,7 +194,7 @@
 
       button {
         background: var(--linear-gradient-details);
-        color: hsl(291, 49%, 27%);
+        color: var(--cards);
         width: 5rem;
 
         transition: filter 0.2s;

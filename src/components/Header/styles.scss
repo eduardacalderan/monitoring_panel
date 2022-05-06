@@ -17,7 +17,7 @@ header {
     background: linear-gradient(
       270deg,
       hsla(0, 0%, 100%, 0),
-      hsl(291, 74%, 50%),
+      var(--purple),
       hsla(0, 0%, 100%, 0)
     );
 
