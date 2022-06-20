@@ -27,16 +27,17 @@
 
   .logo {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 
     .logo-img {
-      width: 2.5rem;
-      height: 3rem;
+      width: 2rem;
+      height: 2.5rem;
       background: var(--linear-gradient-details);
       clip-path: circle();
 
       margin-bottom: 0.3rem;
+
+      margin-left: 6px;
 
       /* ---- RESPONSIVE ---- */
       @media (min-width: 1920px) {

@@ -11,7 +11,7 @@ export function SideBar() {
   return (
     <div className="sidebar">
       <div className="logo">
-        <div data-tip="Logo">
+        <div data-tip="Logo" className="Logo">
           <div className="logo-img"></div>
           <ReactTooltip place="right" type="light" effect="solid" />
         </div>
