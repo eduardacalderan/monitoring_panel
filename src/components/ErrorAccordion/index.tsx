@@ -5,7 +5,6 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { MdOutlineHelp } from "react-icons/md";
-import { Header } from "../Header/index";
 
 import "./styles.scss";
 

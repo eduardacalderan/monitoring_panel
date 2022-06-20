@@ -1,6 +1,6 @@
 .error-container {
   opacity: 90%;
-  margin-right: -48px;
+  margin-right: -55px;
   background: var(--cards);
   padding: 3rem;
 
@@ -13,29 +13,39 @@
 
   /* ---- RESPONSIVE ---- */
 
+  @media (min-width: 1800px) {
+    padding: 5rem;
+  }
+
   @media (max-width: 1430px) {
-    max-width: 800px;
-    height: 500px;
+    max-width: 830px;
   }
 
   @media (max-width: 940px) {
-    max-width: 600px;
+    max-width: 740px;
   }
-  @media (max-width: 740px) {
+  @media (max-width: 830px) {
     max-width: 440px;
-    height: auto;
   }
 
-  @media (max-width: 600px) {
-    padding: 2.5rem;
+  @media (max-width: 740px) {
+    padding: 2.5rem 1.5rem;
 
     max-width: 400px;
   }
 
   @media (max-width: 478px) {
     padding: 1.5rem;
+    margin-right: -49px;
 
     max-width: 300px;
+
+    font-size: 85%;
+  }
+
+  @media (max-width: 380px) {
+    max-width: 270px;
+    padding: 1.5rem 1rem;
   }
 
   p {
@@ -46,6 +56,7 @@
     @media (min-width: 1800px) {
       font-size: calc(1rem * var(--huge-multiplier));
     }
+
     button {
       margin-top: 0.13rem;
     }
@@ -58,7 +69,7 @@
       font-size: 1.8rem;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 740px) {
       font-size: 1.2rem;
     }
   }
@@ -77,12 +88,7 @@
       justify-content: space-between;
 
       @media (max-width: 740px) {
-        display: flex;
-        flex-direction: column;
-      }
-
-      @media (max-width: 600px) {
-        width: 220px;
+        width: 280px;
       }
 
       h3 {
@@ -90,8 +96,6 @@
       }
 
       .quantity {
-        margin-bottom: 4rem;
-
         @media (max-width: 940px) {
           width: 276px;
         }
@@ -99,6 +103,7 @@
         .error-length {
           display: flex;
           flex-direction: column;
+
           p {
             display: flex;
             align-items: center;
@@ -116,6 +121,24 @@
 
         .MuiButtonBase-root {
           max-width: 85px;
+
+          /* ---- RESPONSIVIDADE ---- */
+
+          @media (min-width: 1800px) {
+            max-width: 100px;
+          }
+
+          .MuiAccordionSummary-content {
+            /* ---- RESPONSIVIDADE ---- */
+
+            @media (max-width: 740px) {
+              max-width: 330px;
+            }
+
+            @media (max-width: 478px) {
+              max-width: 225px;
+            }
+          }
         }
 
         .MuiPaper-root {
@@ -125,38 +148,85 @@
         }
 
         .css-ahj2mt-MuiTypography-root {
-          width: 1200px;
-          position: absolute;
-          margin-top: 4rem;
+          width: 410px;
 
-          @media (max-width: 1430px) {
-            max-width: 700px;
-          }
-          @media (max-width: 1430px) {
-            display: flex;
-            flex-direction: column;
+          display: flex;
+          flex-direction: column;
 
-            margin-left: -9.5rem;
+          p {
+            justify-content: left;
           }
 
-          @media (max-width: 740px) {
-            position: unset;
+          /* ---- RESPONSIVIDADE ---- */
+
+          @media (min-width: 1800px) {
+            width: 560px;
+          }
+
+          @media (max-width: 830px) {
+            width: 310px;
+
             margin-top: 0rem;
             font-size: 0.7rem;
-            margin-left: -12.4rem;
           }
 
           @media (max-width: 478px) {
+            width: 270px;
+
             font-size: 0.6rem;
-            margin-left: -13.4rem;
+          }
+
+          @media (max-width: 405px) {
+            width: 230px;
+
+            font-size: 0.5rem;
+          }
+        }
+
+        .css-1m4ljmh-MuiTypography-root {
+          width: auto;
+        }
+
+        .css-yw020d-MuiAccordionSummary-expandIconWrapper {
+          margin-left: -28rem;
+
+          /* ---- RESPONSIVIDADE ---- */
+
+          @media (min-width: 1800px) {
+            margin-left: -56rem;
+          }
+
+          @media (max-width: 740px) {
+            margin-left: -19rem;
+          }
+
+          @media (max-width: 478px) {
+            margin-left: -13.5rem;
+          }
+        }
+
+        .css-mtgw3j-MuiSvgIcon-root {
+          /* ---- RESPONSIVIDADE ---- */
+
+          @media (max-width: 478px) {
+            margin-top: -0.02rem;
+            font-size: 1rem;
           }
         }
 
         .accordion-content {
           margin-right: 4rem;
+          margin-bottom: 0.7rem;
+          border-bottom: 1px solid var(--borders);
+
+          & + .accordion-content {
+            border-bottom: none;
+            margin-bottom: 0rem;
+          }
 
           span {
             margin-left: 0.7rem;
+            text-align: left;
           }
         }
       }
