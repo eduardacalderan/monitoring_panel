@@ -7,8 +7,8 @@ export function HelpAndSupportContent() {
     <div className="help-and-support">
       <p>
         Você pode abrir um chamado em nosso
-        <a href="https://dataintegra.com.br/helpdesk/"> HELP DESK</a> ou entrar
-        em contato através dos nossos canais abaixo.
+        <a href="#"> HELP DESK</a> ou entrar em contato através dos nossos
+        canais abaixo.
       </p>
 
       <div className="icons">
